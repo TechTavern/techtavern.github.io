@@ -54,6 +54,8 @@
     {% include google_analytics.html %}
   </head>
   <body>
+    {% include pageheader.html %}
+    
     <div class="bg-image">
         <div class="mask">
             <div class="d-flex justify-content-center align-items-center h-100" data-aos="fade-up">
@@ -63,6 +65,10 @@
             </div>
             </div>
           </div>
+    </div>
+
+    <div class="container">
+      {{ content }}
     </div>
 
     <!-- Footer JavaScript -->

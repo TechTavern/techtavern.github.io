@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+
 .parallax-window {
     min-height: 500px;
     background: transparent;
@@ -5,10 +7,7 @@
 
 .bg-image { 
     /* The image used */
-    background-image: url("/assets/img/stephen-poore-TZUAQH7ACe4-unsplash.jpg");
-  
-    /* Full height */
-    height: 100vh; 
+    background-image: url("/assets/img/stephen-poore-TZUAQH7ACe4-unsplash-2400x1276.jpg");
   
     /* Center and scale the image nicely */
     background-position: center;
@@ -16,7 +15,118 @@
     background-size: cover;
   }
 
+.side-notch {
+  clip-path: polygon(20% 0%, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 19%);
+  border-radius: 5%;
+}
+
+.bg-image-frame {
+  height: 60vh;
+}
+
 .mask {
     background-color: $mask;
-    height: 100vh;
+
+}
+
+.mask-glass {
+    backdrop-filter: blur(8px);
+    background-color: $mask-glass;
+}
+
+hr.divider {
+    height: 2px;
+    width: 80%;
+    background: blue;
+    background: linear-gradient(90deg, hsl(0, 0%, 20%), hsl(0, 0%, 70%), hsl(0, 0%, 20%));
+}
+
+.gradient {
+    background: $gradient-start;
+    background: linear-gradient(
+      135deg,
+      $gradient-start 0%,
+      $gradient-end 100%
+    );
+  }
+  
+  .page-header {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: $light;
+  }
+  
+  .feature {
+    color: $light;
+    fill: $light;
+  }
+  
+  .feature ul {
+    padding-left: 2rem;
+    list-style-type: none;
+  }
+  
+  .feature ul li {
+    padding-left: 2rem;
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .icon {
+    color: #fff;
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.75rem;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gallery {
+    // background-color: whitesmoke;
+    background-color: $nero;
+    color: $light;
+  }
+  
+  .gallery img {
+    border-radius: 5%;
+  }
+  
+  .services {
+    color: $light;
+  }
+  
+  footer {
+    color: $light;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  svg-bottom {
+    fill: $light;
+  }
+
+.shape-divider-top{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 98px;
+}
+
+.shape-divider .shape-fill {
+    fill: $light;
 }

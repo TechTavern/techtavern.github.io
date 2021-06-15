@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+
+    <!-- favicon stuff-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Page Metadata -->
+    <title>{{ page.title }}</title>
+
+    <!-- SEO Plugin Stuff -->
+    {% seo %}
+
+    <meta
+      itemprop="description"
+      name="description"
+      content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}"
+    />
+
+    <!-- Analytics -->
+    {% include google_analytics.html %}
+  </head>
+  <body class="bg-light">
+    {% include navbar.html %}
+    <header class="bg-image">
+      <div class="mask bg-image-frame d-flex align-items-center justify-content-center">
+      <div class="container pt-3">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-8 text-light mask-glass rounded p-5">
+            <h2 class="text-light" data-aos="zoom-in">{{ site.title }}</h2>
+
+            <p>
+              {{ site.description }}
+            </p>
+
+            <button type="button" class="btn btn-outline-success btn-lg">
+              Services
+            </button>
+            <button type="button" class="btn btn-outline-warning btn-lg">
+              Contact
+            </button>
+          </div>
+          <div class="col-md-3">
+
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </header>
+
+    <section class="feature gradient pt-5 mb-3">
+      <div class="container mt-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="/assets/img/annie-spratt-QckxruozjRg-unsplash.jpg" class="img-fluid rounded shadow side-notch" alt="" />
+          </div>
+
+          <div class="col-md-6" data-aos="fade-in">
+            <h1 class="my-3">Introducing Tech Tavern</h1>
+            <p class="my-4">
+              Helping businesses and communities supercharge their workforce, achieve undeniable impact, and get off the ground with best in breed coding and data practices.
+            </p>
+            <ul>
+              <li>Develop a workforce with cutting edge skills</li>
+              <li>Plan and adopt technology for the highest impact</li>
+              <li>Supercharge your data and infrastructure with best practice code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% include dividerbottom.html %}
+    </section>
+    
+
+    <section class="icons pt-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="icon gradient mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-layers"
+              >
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              
+            </div>
+            <h3>Workforce</h3>
+            <p>
+              Our customizable, block-based build system makes creating your
+              next project fast and easy!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="icon gradient mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-smartphone"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3>Impact</h3>
+            <p class="mb-0">
+              Featuring carefully crafted, mobile-first components, your end
+              product will function beautifully on any device!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="icon gradient mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-code"
+              >
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>Code</h3>
+            <p class="mb-0">
+              All of the layouts, page sections, components, and utilities are
+              fully covered in this products docs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
+        <path
+          class="feature"
+          fill-opacity="1"
+          d="M0,128L120,128C240,128,480,128,720,122.7C960,117,1200,107,1320,101.3L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h1>Check our latest work</h1>
+            <p>
+              It's crafted with the latest trend of design & coded with all
+              modern approaches. It's a robust & multi-dimensional usable
+              template
+            </p>
+          </div>
+        </div>
+        <div class="row my-3 g-3">
+          <div class="col-md-4">
+            <img src="/assets/img/c1.jpg" alt="Gallery image" class="img-fluid" />
+          </div>
+          <div class="col-md-4">
+            <img src="/assets/img/c2.jpg" alt="Gallery image" class="img-fluid" />
+          </div>
+          <div class="col-md-4">
+            <img src="/assets/img/c3.jpg" alt="Gallery image" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-end">
+          <div class="col-md-2">
+            <button type="button" class="btn btn-outline-secondary">
+              See all works
+            </button>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          class="feature"
+          fill-opacity="1"
+          d="M0,128L120,128C240,128,480,128,720,122.7C960,117,1200,107,1320,101.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <section class="services gradient">
+      {% include dividertop.html %}
+      <div class="container" data-aos="fade-right">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5">
+            <button type="button" class="btn btn-outline-warning mb-3">
+              Coding
+            </button>
+
+            <h1>Tap into Skills</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil
+              sint cumque omnis iure nisi.
+            </p>
+          </div>
+          <div class="col-md-5"><img src="/assets/img/coding_.svg" alt="" /></div>
+          <div class="col-md-5"><img src="/assets/img/marketing.svg" alt="" /></div>
+          <div class="col-md-5">
+            <button type="button " class="btn btn-outline-success mb-3">
+              Marketing
+            </button>
+
+            <h1>Tap into Impact</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil
+              sint cumque omnis iure nisi.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <button type="button" class="btn btn-outline-light mb-3">
+              Selling
+            </button>
+
+            <h1>Tap into Code</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Delectus, tempore placeat corrupti enim, cumque ex? Mollitia nihil
+              sint cumque omnis iure nisi.
+            </p>
+          </div>
+          <div class="col-md-5"><img src="/assets/img/revenue_.svg" alt="" /></div>
+        </div>
+      </div>
+{% include dividerbottom.html %}
+    </section>
+
+    <section class="contact pb-5 text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>Contact us:</h1>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Example textarea</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="button" class="btn btn-outline-secondary">
+              Send
+            </button>
+          </div>
+          <div class="col-md-5">
+            <img src="/assets/img/handshake.svg" alt="Contact image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="gradient pb-5">
+      <div class="container-fluid text-center">
+        Created by Tech Tavern
+      </div>
+      <div class="container-fluid text-center">
+        &copy; Copyright 2021, Tech Tavern LLC
+      </div>
+    </footer>
+
+    <!-- Footer JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/popper.1.14.7.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
