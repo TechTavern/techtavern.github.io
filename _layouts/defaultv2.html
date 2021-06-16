@@ -9,6 +9,7 @@
     />
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ "/assets/css/aos.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
 
     <!-- favicon stuff-->
@@ -63,7 +64,7 @@
   <body class="bg-light" data-bs-spy="scroll" data-bs-target="main-navbar" data-bs-offset="0">
     {% include navbar.html %}
 
-    <header class="bg-image" id="scrollspyHome">
+    <header class="bg-image" id="Home">
       <div
         class="
           mask
@@ -75,15 +76,15 @@
       >
         <div class="container pt-3">
           <div class="row align-items-center justify-content-center">
-            <div class="col-md-8 text-light mask-glass rounded p-5">
-              <h2 class="text-light" data-aos="zoom-in">{{ site.title }}</h2>
+            <div class="col-md-8 text-light mask-glass rounded p-5" data-aos="zoom-in">
+              <h2 class="text-light">{{ site.title }}</h2>
 
               <p>{{ site.description }}</p>
 
-              <a role="button" class="btn btn-outline-success btn-lg" href="#scrollspyServices">
+              <a role="button" class="btn btn-outline-success btn-lg" href="#Services">
                 Services
               </a>
-              <a role="button" class="btn btn-outline-warning btn-lg" href="#scrollspyContact">
+              <a role="button" class="btn btn-outline-warning btn-lg" href="#Contact">
                 Contact
               </a>
             </div>
@@ -93,7 +94,7 @@
       </div>
     </header>
 
-    <section class="feature gradient pt-5 mb-3" id="scrollspyInfo">
+    <section class="feature gradient pt-5 mb-3" id="Info">
       <div class="container mt-5">
         <div class="row align-items-center">
           <div class="col-md-6">
@@ -124,7 +125,7 @@
       {% include dividerbottom.html %}
     </section>
 
-    <section class="icons pt-5" id="scrollspyServices">
+    <section class="icons pt-5" id="Mission">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-4">
@@ -204,7 +205,7 @@
       </div>
     </section>
 
-    <section class="gallery" id="scrollspyPortfolio">
+    <section class="gallery" id="Portfolio">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
         <path
           class="feature"
@@ -216,7 +217,7 @@
        
         <div class="row my-3 g-3">
 
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="flip-left">
             <div class="card bg-dark text-white">
               <img src="/assets/img/c1.jpg" class="card-img" alt="...">
               <div class="card-img-overlay mask">
@@ -226,7 +227,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="flip-left">
             <a href="#">
             <div class="card bg-dark text-white">
 
@@ -239,7 +240,7 @@
           </a>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="flip-left">
             <div class="card bg-dark text-white">
               <img src="/assets/img/c3.jpg" class="card-img" alt="...">
               <div class="card-img-overlay mask">
@@ -266,11 +267,11 @@
       </svg>
     </section>
 
-    <section class="services gradient" id="scrollspyServices2">
+    <section class="services gradient" id="Services">
       {% include dividertop.html %}
-      <div class="container" data-aos="fade-right">
+      <div class="container">
         <div class="row align-items-center justify-content-center">
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-right">
 
             <h1>Tap into Skills</h1>
 
@@ -280,13 +281,13 @@
               sint cumque omnis iure nisi.
             </p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-left">
             <img src="/assets/img/undraw_teaching_f1cm.svg" class="img-fluid" alt="" />
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-right">
             <img src="/assets/img/undraw_Scrum_board_re_wk7v.svg" class="img-fluid" alt="" />
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-left">
             <h1>Tap into Impact</h1>
 
             <p>
@@ -295,7 +296,7 @@
               sint cumque omnis iure nisi.
             </p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-right">
             <h1>Tap into Code</h1>
 
             <p>
@@ -304,7 +305,7 @@
               sint cumque omnis iure nisi.
             </p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-left">
             <img src="/assets/img/undraw_programming_2svr.svg" class="img-fluid" alt="" />
           </div>
         </div>
@@ -312,10 +313,10 @@
       {% include dividerbottom.html %}
     </section>
 
-    <section class="contact py-5" id="scrollspyContact">
+    <section class="contact py-5" id="Contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg">
+          <div class="col-lg" data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
             <h1>Contact us:</h1>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
@@ -342,7 +343,7 @@
               Send
             </button>
           </div>
-          <div class="col-lg">
+          <div class="col-lg" data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
             <img src="/assets/img/undraw_contact_us_15o2.svg" alt="Contact image" class="img-fluid text-center" />
           </div>
         </div>
