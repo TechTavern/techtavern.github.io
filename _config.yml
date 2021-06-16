@@ -21,9 +21,10 @@
 title: Tech Tavern
 email: scott@tech-tavern.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A place where workforce development, strategy, and supplemental IT comes together.  Tech Tavern works
+  with you to develop the right plan and solution to move your IT plans forward.  Be that bringing the
+  best IT and IT leadership training, helping to develop your technical strategy or as an interim CIO, 
+  or hands on technical implementation.  Tech Tavern is the place it comes together.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://techtavern.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: streamweaver

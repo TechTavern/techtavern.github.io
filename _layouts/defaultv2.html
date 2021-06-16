@@ -29,12 +29,19 @@
       sizes="16x16"
       href="/assets/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <link
-      rel="mask-icon"
-      href="/assets/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/favicon/android-chrome-192x192.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
@@ -53,60 +60,71 @@
     <!-- Analytics -->
     {% include google_analytics.html %}
   </head>
-  <body class="bg-light">
+  <body class="bg-light" data-bs-spy="scroll" data-bs-target="main-navbar" data-bs-offset="0">
     {% include navbar.html %}
-    <header class="bg-image">
-      <div class="mask bg-image-frame d-flex align-items-center justify-content-center">
-      <div class="container pt-3">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-8 text-light mask-glass rounded p-5">
-            <h2 class="text-light" data-aos="zoom-in">{{ site.title }}</h2>
 
-            <p>
-              {{ site.description }}
-            </p>
+    <header class="bg-image" id="scrollspyHome">
+      <div
+        class="
+          mask
+          bg-image-frame
+          d-flex
+          align-items-center
+          justify-content-center
+        "
+      >
+        <div class="container pt-3">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-8 text-light mask-glass rounded p-5">
+              <h2 class="text-light" data-aos="zoom-in">{{ site.title }}</h2>
 
-            <button type="button" class="btn btn-outline-success btn-lg">
-              Services
-            </button>
-            <button type="button" class="btn btn-outline-warning btn-lg">
-              Contact
-            </button>
-          </div>
-          <div class="col-md-3">
+              <p>{{ site.description }}</p>
 
+              <a role="button" class="btn btn-outline-success btn-lg" href="#scrollspyServices">
+                Services
+              </a>
+              <a role="button" class="btn btn-outline-warning btn-lg" href="#scrollspyContact">
+                Contact
+              </a>
+            </div>
+            <div class="col-md-3"></div>
           </div>
         </div>
       </div>
-      </div>
-      
     </header>
 
-    <section class="feature gradient pt-5 mb-3">
+    <section class="feature gradient pt-5 mb-3" id="scrollspyInfo">
       <div class="container mt-5">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <img src="/assets/img/annie-spratt-QckxruozjRg-unsplash.jpg" class="img-fluid rounded shadow side-notch" alt="" />
+            <img
+              src="/assets/img/annie-spratt-QckxruozjRg-unsplash.jpg"
+              class="img-fluid rounded shadow side-notch"
+              alt=""
+            />
           </div>
 
           <div class="col-md-6" data-aos="fade-in">
             <h1 class="my-3">Introducing Tech Tavern</h1>
             <p class="my-4">
-              Helping businesses and communities supercharge their workforce, achieve undeniable impact, and get off the ground with best in breed coding and data practices.
+              Helping businesses and communities supercharge their workforce,
+              achieve undeniable impact, and get off the ground with best in
+              breed coding and data practices.
             </p>
             <ul>
               <li>Develop a workforce with cutting edge skills</li>
               <li>Plan and adopt technology for the highest impact</li>
-              <li>Supercharge your data and infrastructure with best practice code</li>
+              <li>
+                Supercharge your data and infrastructure with best practice code
+              </li>
             </ul>
           </div>
         </div>
       </div>
-    {% include dividerbottom.html %}
+      {% include dividerbottom.html %}
     </section>
-    
 
-    <section class="icons pt-5">
+    <section class="icons pt-5" id="scrollspyServices">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-4">
@@ -127,7 +145,6 @@
                 <polyline points="2 17 12 22 22 17"></polyline>
                 <polyline points="2 12 12 17 22 12"></polyline>
               </svg>
-              
             </div>
             <h3>Workforce</h3>
             <p>
@@ -187,7 +204,7 @@
       </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="scrollspyPortfolio">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
         <path
           class="feature"
@@ -196,25 +213,40 @@
         ></path>
       </svg>
       <div class="container">
-        <div class="row">
-          <div class="col-md-10">
-            <h1>Check our latest work</h1>
-            <p>
-              It's crafted with the latest trend of design & coded with all
-              modern approaches. It's a robust & multi-dimensional usable
-              template
-            </p>
-          </div>
-        </div>
+       
         <div class="row my-3 g-3">
+
           <div class="col-md-4">
-            <img src="/assets/img/c1.jpg" alt="Gallery image" class="img-fluid" />
+            <div class="card bg-dark text-white">
+              <img src="/assets/img/c1.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay mask">
+                <h5 class="card-title">Card title 1</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
           </div>
+
           <div class="col-md-4">
-            <img src="/assets/img/c2.jpg" alt="Gallery image" class="img-fluid" />
+            <a href="#">
+            <div class="card bg-dark text-white">
+
+              <img src="/assets/img/c2.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay mask" href="#">
+                <h5 class="card-title">Card title 2</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </a>
           </div>
+
           <div class="col-md-4">
-            <img src="/assets/img/c3.jpg" alt="Gallery image" class="img-fluid" />
+            <div class="card bg-dark text-white">
+              <img src="/assets/img/c3.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay mask">
+                <h5 class="card-title">Card title </h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row mt-5 justify-content-end">
@@ -234,14 +266,11 @@
       </svg>
     </section>
 
-    <section class="services gradient">
+    <section class="services gradient" id="scrollspyServices2">
       {% include dividertop.html %}
       <div class="container" data-aos="fade-right">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-5">
-            <button type="button" class="btn btn-outline-warning mb-3">
-              Coding
-            </button>
 
             <h1>Tap into Skills</h1>
 
@@ -251,13 +280,13 @@
               sint cumque omnis iure nisi.
             </p>
           </div>
-          <div class="col-md-5"><img src="/assets/img/coding_.svg" alt="" /></div>
-          <div class="col-md-5"><img src="/assets/img/marketing.svg" alt="" /></div>
           <div class="col-md-5">
-            <button type="button " class="btn btn-outline-success mb-3">
-              Marketing
-            </button>
-
+            <img src="/assets/img/undraw_teaching_f1cm.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-5">
+            <img src="/assets/img/undraw_Scrum_board_re_wk7v.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-5">
             <h1>Tap into Impact</h1>
 
             <p>
@@ -267,10 +296,6 @@
             </p>
           </div>
           <div class="col-md-5">
-            <button type="button" class="btn btn-outline-light mb-3">
-              Selling
-            </button>
-
             <h1>Tap into Code</h1>
 
             <p>
@@ -279,13 +304,15 @@
               sint cumque omnis iure nisi.
             </p>
           </div>
-          <div class="col-md-5"><img src="/assets/img/revenue_.svg" alt="" /></div>
+          <div class="col-md-5">
+            <img src="/assets/img/undraw_programming_2svr.svg" class="img-fluid" alt="" />
+          </div>
         </div>
       </div>
-{% include dividerbottom.html %}
+      {% include dividerbottom.html %}
     </section>
 
-    <section class="contact pb-5 text-light">
+    <section class="contact pb-5 text-light" id="scrollspyContact">
       <div class="container">
         <div class="row">
           <div class="col-md-5">
@@ -321,11 +348,9 @@
         </div>
       </div>
     </section>
-
+  </div>
     <footer class="gradient pb-5">
-      <div class="container-fluid text-center">
-        Created by Tech Tavern
-      </div>
+      <div class="container-fluid text-center">Created by Tech Tavern</div>
       <div class="container-fluid text-center">
         &copy; Copyright 2021, Tech Tavern LLC
       </div>
@@ -334,7 +359,7 @@
     <!-- Footer JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="/assets/js/scripts.js"></script>
-    <script src="/assets/js/popper.1.14.7.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/aos.js"></script>
     <script>

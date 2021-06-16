@@ -8,6 +8,18 @@ $sealbrown: #260101; // Seal Brown
 
 $nero: #1f1e1e; // Nero
 
+$ghost: #C1C6CE;
+$shark: #232326; // dark
+$el-salva: #954035; // danger
+$warning: #958f35;
+$success: #35953a;
+$secondary: $ghost;
+$beaver: #89685D;
+$info: #5d8089;
+$light: #f2f7ff;
+$dark: $shark;
+$danger: $el-salva;
+$primary: $beaver;
 
 
 $mask: rgba(0,0,0,0.7);
@@ -21,5 +33,4 @@ $headings-font-family: 'Poppins', sans-serif;
 $fa-font-path: "../webfonts";
 $enable-shadows: true;
 
-$dark: $nero;
-$light: $beau-blue2;
+
