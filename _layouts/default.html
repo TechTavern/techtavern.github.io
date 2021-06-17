@@ -9,6 +9,7 @@
     />
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ "/assets/css/aos.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
 
     <!-- favicon stuff-->
@@ -29,12 +30,19 @@
       sizes="16x16"
       href="/assets/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <link
-      rel="mask-icon"
-      href="/assets/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/favicon/android-chrome-192x192.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
@@ -53,32 +61,25 @@
     <!-- Analytics -->
     {% include google_analytics.html %}
   </head>
-  <body>
-    {% include pageheader.html %}
-    
-    <div class="bg-image">
-        <div class="mask">
-            <div class="d-flex justify-content-center align-items-center h-100" data-aos="fade-up">
-              <div class="container text-center">
-              <h1 class="text-white mb-0"> Welcome To<br />{{ site.title }}</h1>
-              <p class="text-light">{{ site.description }}</p>
-            </div>
-            </div>
-          </div>
-    </div>
+  <body class="bg-light" data-bs-spy="scroll" data-bs-target="navbarMain" data-bs-offset="0">
+    <!-- Main Navbar -->
+    {% include navbarcollapse.html %}
 
-    <div class="container">
-      {{ content }}
-    </div>
+
+    {{ content }}
+   
 
     <!-- Footer JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="/assets/js/scripts.js"></script>
-    <script src="/assets/js/popper.1.14.7.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        delay: 100,
+        duration: 600,
+      });
     </script>
   </body>
 </html>
