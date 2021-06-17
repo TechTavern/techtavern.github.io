@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   best IT training, helping to develop your technical strategy, as interim CIO, 
   or hands on technical implementation.  Tech Tavern is where it comes together.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://www.techtavern.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.tech-tavern.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: streamweaver
 github_username:  streamweaver
 
@@ -59,4 +59,4 @@ plugins:
 #   - vendor/ruby/
 
 #
-google_analytics_id: UA-xxxxxxxxx
+google_analytics_id: G-761W2J2ZZ0
