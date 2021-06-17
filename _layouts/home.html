@@ -1,70 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ "/assets/css/aos.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
-
-    <!-- favicon stuff-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/assets/favicon/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="/assets/favicon/android-chrome-512x512.png"
-    />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-
-    <!-- Page Metadata -->
-    <title>{{ page.title }}</title>
-
-    <!-- SEO Plugin Stuff -->
-    {% seo %}
-
-    <meta
-      itemprop="description"
-      name="description"
-      content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}"
-    />
-
-    <!-- Analytics -->
-    {% include google_analytics.html %}
-  </head>
-  <body class="bg-light" data-bs-spy="scroll" data-bs-target="navbarMain" data-bs-offset="0">
-    <!-- Main Navbar -->
-    {% include navbarcollapse.html %}
-
+---
+layout: default
+---
 
     <!-- Page Header -->
     <header class="bg-image" id="Home">
@@ -223,18 +159,3 @@
         &copy; Copyright 2021, Tech Tavern LLC
       </div>
     </footer>
-
-    <!-- Footer JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/assets/js/scripts.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/aos.js"></script>
-    <script>
-      AOS.init({
-        delay: 100,
-        duration: 600,
-      });
-    </script>
-  </body>
-</html>
