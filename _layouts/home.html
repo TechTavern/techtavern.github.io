@@ -61,9 +61,12 @@
     <!-- Analytics -->
     {% include google_analytics.html %}
   </head>
-  <body class="bg-light" data-bs-spy="scroll" data-bs-target="main-navbar" data-bs-offset="0">
+  <body class="bg-light" data-bs-spy="scroll" data-bs-target="navbarMain" data-bs-offset="0">
+    <!-- Main Navbar -->
     {% include navbarcollapse.html %}
 
+
+    <!-- Page Header -->
     <header class="bg-image" id="Home">
       <div
         class="
@@ -96,36 +99,12 @@
 
     <section class="feature gradient pt-5 mb-3" id="Info">
       <div class="container mt-5">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img
-              src="/assets/img/annie-spratt-QckxruozjRg-unsplash.jpg"
-              class="img-fluid rounded shadow side-notch"
-              alt="5 people sitting around a wooden table working on laptops and collaborating together."
-            />
-          </div>
-
-          <div class="col-md-6" data-aos="fade-in">
-            <h1 class="my-3">Introducing Tech Tavern</h1>
-            <p class="my-4">
-              Helping businesses and communities supercharge their workforce,
-              achieve undeniable impact, and get off the ground with best in
-              breed coding and data practices.
-            </p>
-            <ul>
-              <li>Develop a workforce with cutting edge skills</li>
-              <li>Plan and adopt technology for the highest impact</li>
-              <li>
-                Supercharge your data and infrastructure with best practice implementations
-              </li>
-            </ul>
-          </div>
-        </div>
+        {% include info.html %}
       </div>
       {% include dividerbottom.html %}
     </section>
 
-    <section class="icons pt-5" id="Mission">
+    <section class="icons py-5" id="Mission">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-4">
@@ -225,14 +204,13 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          class="feature"
           fill-opacity="1"
           d="M0,128L120,128C240,128,480,128,720,122.7C960,117,1200,107,1320,101.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
         ></path>
       </svg>
     </section>
 
-    <section class="contact py-5" id="Contact">
+    <section class="contact pb-5" id="Contact">
       <div class="container">
         {% include contact.html %}
       </div>
