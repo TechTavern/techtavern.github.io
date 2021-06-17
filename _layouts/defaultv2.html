@@ -101,7 +101,7 @@
             <img
               src="/assets/img/annie-spratt-QckxruozjRg-unsplash.jpg"
               class="img-fluid rounded shadow side-notch"
-              alt=""
+              alt="5 people sitting around a wooden table working on laptops and collaborating together."
             />
           </div>
 
@@ -239,10 +239,10 @@
             </p>
           </div>
           <div class="col-md-5" data-aos="fade-left">
-            <img src="/assets/img/undraw_teaching_f1cm.svg" class="img-fluid" alt="" />
+            <img src="/assets/img/undraw_teaching_f1cm.svg" class="img-fluid" alt="line drawing of a person standing in front of a blackboard" />
           </div>
           <div class="col-md-5" data-aos="fade-right">
-            <img src="/assets/img/undraw_Scrum_board_re_wk7v.svg" class="img-fluid" alt="" />
+            <img src="/assets/img/undraw_Scrum_board_re_wk7v.svg" class="img-fluid" alt="line drawing of a person in front of a scrum board" />
           </div>
           <div class="col-md-5" data-aos="fade-left">
             <h1>Tap into Impact</h1>
@@ -262,7 +262,7 @@
             </p>
           </div>
           <div class="col-md-5" data-aos="fade-left">
-            <img src="/assets/img/undraw_programming_2svr.svg" class="img-fluid" alt="" />
+            <img src="/assets/img/undraw_programming_2svr.svg" class="img-fluid" alt="line drawing of someone from behind working on a computer with several monitors." />
           </div>
         </div>
       </div>
@@ -271,38 +271,7 @@
 
     <section class="contact py-5" id="Contact">
       <div class="container">
-        <div class="row">
-          <div class="col-lg" data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
-            <h1>Contact us:</h1>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Email address</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Example textarea</label
-              >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
-            </div>
-            <button type="button" class="btn btn-outline-secondary">
-              Send
-            </button>
-          </div>
-          <div class="col-lg" data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
-            <img src="/assets/img/undraw_contact_us_15o2.svg" alt="Contact image" class="img-fluid text-center" />
-          </div>
-        </div>
+        {% include contact.html %}
       </div>
     </section>
   </div>
@@ -320,7 +289,10 @@
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        delay: 100,
+        duration: 600,
+      });
     </script>
   </body>
 </html>
