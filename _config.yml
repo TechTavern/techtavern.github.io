@@ -32,8 +32,8 @@ image: /assets/img/annie-spratt-QckxruozjRg-unsplash.jpg
 
 twitter:
   username: streamweaver
-  card: summary
-
+  card: summary_large_image
+  
 # Build settings
 theme: minima
 plugins:
