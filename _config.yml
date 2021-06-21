@@ -26,11 +26,13 @@ description: >- # this means to ignore newlines until "baseurl:"
   IT development and operations. Tap into our expertise and reach your organization's IT goals. 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.tech-tavern.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: streamweaver
-github_username:  streamweaver
 
 # SEO Tag Defaults
 image: /assets/img/annie-spratt-QckxruozjRg-unsplash.jpg
+
+twitter:
+  username: streamweaver
+  card: summary
 
 # Build settings
 theme: minima
