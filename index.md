@@ -3,5 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+image: /assets/img/annie-spratt-QckxruozjRg-unsplash.jpg
 ---
 Hello World, from Tech Tavern!

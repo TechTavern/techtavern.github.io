@@ -29,6 +29,9 @@ url: "https://www.tech-tavern.com" # the base hostname & protocol for your site,
 twitter_username: streamweaver
 github_username:  streamweaver
 
+# SEO Tag Defaults
+image: /assets/img/annie-spratt-QckxruozjRg-unsplash.jpg
+
 # Build settings
 theme: minima
 plugins:
