@@ -21,9 +21,11 @@
 title: Tech Tavern
 email: scott@tech-tavern.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Tech Tavern develops the right solutions to move your IT plans forward. We offer IT training, 
-  run events for workforce development, consult on technical strategy and leadership, and supplement
-  IT development and operations. Tap into our expertise and reach your organization's IT goals. 
+  Tech Tavern is the perfect partner to help you move your IT plans forward. We offer IT training to help your workforce
+  develop the skills they need to be successful. We also consult on technical strategy and leadership to ensure that
+  your organization is making the best decisions for its future. In addition, we supplement IT development and
+  operations to provide the extra support you need to reach your goals. With our expertise, you can be confident that
+  your organization will achieve its IT goals.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.tech-tavern.com" # the base hostname & protocol for your site, e.g. http://example.com
 
