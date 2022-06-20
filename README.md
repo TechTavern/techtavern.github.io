@@ -7,6 +7,9 @@ Find out more on https://www.tech-tavern.com
 ## Self Notes
 This is setup as a brochure site and does not use the posts feature.  Content can be found in the /_layouts folder.
 
+## Developing
+Develop in a local docker instance using the native jekyll image.  To run just `docker-compose up -d`
+
 ## Acknowledgements
 The following resources were used either directly or as inspiration in this site build.
 
